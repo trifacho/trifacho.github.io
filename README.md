@@ -1,4 +1,4 @@
-# spanishpolice.github.io
+# trifacho.github.io
 
 Example of static video gallery with ajax search engine intended to do divulgation with small resources
 - https://trifacho.github.io
