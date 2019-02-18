@@ -16,7 +16,7 @@ function set_language(lang) {
 	if(lang=="ca") {
 		$(".languages .active").removeClass("active");
 		$(".languages .catala").addClass("active");
-		$(".first p").html("Troba el teu policia fatxa i compara les<br/>hòsties dels diferents col·legis");
+		$(".first p").html("Troba el teu espanyol fatxa i compara<br/>les hòsties dels diferents policies");
 		$(".search2").attr("placeholder","Ex. sant antoni");
 		$(".search3").html("Cercar");
 		$(".search4.void0").html("No s'ha entrat cap criteri de cerca");
@@ -27,7 +27,7 @@ function set_language(lang) {
 	if(lang=="es") {
 		$(".languages .active").removeClass("active");
 		$(".languages .castellano").addClass("active");
-		$(".first p").html("Encuentra tu policía facha y compara las<br/>hostias de los diferentes colegios");
+		$(".first p").html("Encuentra tu español facha y compara<br/>las hostias de los diferentes policías");
 		$(".search2").attr("placeholder","Ej. patada voladora");
 		$(".search3").html("Buscar");
 		$(".search4.void0").html("No se ha entrado ningún criterio de búsqueda");
@@ -38,7 +38,7 @@ function set_language(lang) {
 	if(lang=="en") {
 		$(".languages .active").removeClass("active");
 		$(".languages .english").addClass("active");
-		$(".first p").html("Find your spanish police and compare the<br/>attacks of the different schools");
+		$(".first p").html("Find your spanish fascist and compare<br/>the attacks of the different police");
 		$(".search2").attr("placeholder","Ex. spanish police");
 		$(".search3").html("Search");
 		$(".search4.void0").html("No search criteria has been entered");
