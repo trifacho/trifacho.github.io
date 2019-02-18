@@ -45,7 +45,13 @@ $(document).ready(function() {
 		$(".tz-gallery .row").html("");
 		var num=0;
 		var type=0
-		var text=$(".search2").val().split(" ");
+		var text=$(".search2").val().trim().split(" ");
+		if(text.length==1 && text[0]=="") {
+			$(".second").hide();
+			$(".first").show();
+			$(".search4").html("No se ha entrado ningún criterio de búsqueda");
+			return;
+		}
 		for(var i in cache) {
 			found=0;
 			for(var j in text) {
