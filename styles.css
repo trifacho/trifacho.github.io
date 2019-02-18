@@ -64,15 +64,15 @@ body {
 
 /* ADDED */
 @media (min-width: 1200px) {
-	.caption {min-height:110px;}
+	.caption {min-height:160px;}
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-	.caption {min-height:130px;}
+	.caption {min-height:180px;}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-	.caption {min-height:110px;}
+	.caption {min-height:160px;}
 }
 
 @media (max-width: 767px) {
@@ -98,7 +98,7 @@ body {
 	text-align:center;
     font-family: sans-serif;
     font-weight: bold;
-    margin-bottom:30px;
+    margin-bottom:20px;
 }
 
 .trifacho p {

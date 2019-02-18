@@ -29,13 +29,13 @@ function set_language(lang) {
 	if(lang=="es") {
 		$(".languages .active").removeClass("active");
 		$(".languages .castellano").addClass("active");
-		$(".first p").html("Encuentra tu policia facha y compara las<br/>hostias de los diferentes colegios");
+		$(".first p").html("Encuentra tu policía facha y compara las<br/>hostias de los diferentes colegios");
 		$(".search2").attr("placeholder","Ej. patada voladora");
 		$(".search3").html("Buscar");
 		$(".search4.void0").html("No se ha entrado ningún criterio de búsqueda");
 		$(".search4.type0").html("No se han encontrado resultados con estos criterios");
-		$(".search4.type1").html("Se estan mostrando los resultados que contienen todos los terminos entrados");
-		$(".search4.type2").html("Se estan mostrando los resultados que contienen alguno de los terminos entrados");
+		$(".search4.type1").html("Se están mostrando los resultados que contienen todos los términos entrados");
+		$(".search4.type2").html("Se están mostrando los resultados que contienen alguno de los términos entrados");
 	}
 	if(lang=="en") {
 		$(".languages .active").removeClass("active");
@@ -66,7 +66,7 @@ function init_cache() {
 			async:false,
 			type:"get",
 			success:function(response) {
-				response=response.replace(new RegExp("<img","g"),"<img2");
+				response=response.replace(new RegExp("<img ","g"),"<img2 ");
 				$(".thumbnail",response).each(function() {
 					cache.push({
 						source:urls[i],
