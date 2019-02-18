@@ -15,7 +15,7 @@ Related projects
 - https://spanishmanada.github.io
 
 Features of the ajax search engine:
-- Allow to do searchs of the follow sites:
+- Allows to do searches of the follow sites:
   - https://spanishpolice.github.io
   - https://spanishradicals.github.io
   - https://catalanpolice.github.io
@@ -23,7 +23,11 @@ Features of the ajax search engine:
   - https://spanishcleaners.github.io
   - https://spanishfakenews.github.io
   - https://spanishindoctrination.github.io
-- Allow to call the website passing arguments:
+- Allows to call the website passing arguments:
   - lang=ca,en,es
   - q=search+string
+- Examples of the previous features:
+  - https://trifacho.github.io/?q=sant+antoni
+  - https://trifacho.github.io/?lang=en
+  - https://trifacho.github.io/?q=sant+antoni&lang=en
 
