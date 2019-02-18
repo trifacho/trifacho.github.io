@@ -1,6 +1,4 @@
 
-var cache=[];
-
 function get_keycode(e) {
 	if(e.keyCode) return e.keyCode;
 	else if(e.which) return e.which;
@@ -50,6 +48,8 @@ function set_language(lang) {
 	}
 }
 
+var cache=[];
+
 function init_cache() {
 	var urls=[
 		"https://spanishpolice.github.io",
@@ -84,10 +84,10 @@ function init_cache() {
 	}
 }
 
-function real_search() {
+function real_search(text) {
 	var num=0;
 	var type=0
-	var text=$(".search2").val().trim().split(" ");
+	text=text.trim().split(" ");
 	if(text.length==1 && text[0]=="") {
 		$(".second").hide();
 		$(".first").show();
@@ -96,7 +96,6 @@ function real_search() {
 		$(".tz-gallery").hide();
 		return;
 	}
-
 	$(".tz-gallery .row").html("");
 	for(var i in cache) {
 		found=0;
@@ -138,7 +137,6 @@ function real_search() {
 			}
 		}
 	}
-
 	if(type==0) {
 		$(".second").hide();
 		$(".first").show();
@@ -162,10 +160,38 @@ function real_search() {
 	}
 }
 
+function init_search() {
+	var params=new URLSearchParams(window.location.search);
+	var lang=params.get("lang");
+	var q=params.get("q");
+	if(lang) {
+		set_language(lang);
+	}
+	if(q) {
+		$(".search2").val(q);
+		real_search(q);
+	}
+}
+
+function set_param(key,val) {
+	history.pushState(null,"","?"+key+"="+val.replace(new RegExp(" ","g"),"+"))
+}
+
 $(document).ready(function() {
 	set_language(get_language());
 	init_cache();
-	$(".search3").on("click",real_search);
-	$(".search2").on("keypress",function(e) { if(get_keycode(e)==13) real_search(); });
+	init_search();
+	$(".search3").on("click",function() {
+		set_param("q",$(".search2").val());
+		real_search($(".search2").val());
+	});
+	$(".search2").on("keypress",function(e) {
+		if(get_keycode(e)!=13) return;
+		$(".search3").trigger("click");
+	});
 	$(".search2").focus();
+	$(".languages a").on("click",function() {
+		set_param("lang",$(this).attr("lang"));
+		set_language($(this).attr("lang"));
+	});
 });
