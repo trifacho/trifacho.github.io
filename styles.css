@@ -138,12 +138,38 @@ body {
 .trifacho .search4 {
 	font-size:14px;
 	margin:20px auto 0;
+	display:none;
 }
 
 .second {
 	display:none;
 }
 
+.tz-gallery {
+	display:none;
+}
+
 .template {
 	display:none;
+}
+
+/* ADDED */
+.languages {
+	background:#333;
+}
+
+.languages a {
+	color:#fff;
+	padding:10px 20px;
+	display:block;
+	float:right;
+}
+
+.languages a:hover {
+	text-decoration:none;
+	background:#000;
+}
+
+.languages .active {
+	background:#000;
 }

@@ -16,11 +16,20 @@
 	<link rel="shortcut icon" type="image/jpg" href="favicon.jpg">
 </head>
 <body>
+
+<div class="container-fluid languages">
+	<div class="row">
+		<a class="english" href="javascript:set_language('en')">English</a>
+		<a class="castellano" href="javascript:set_language('es')">Castellano</a>
+		<a class="catala active" href="javascript:set_language('ca')">Català</a>
+	</div>
+</div>
+
 <div class="container">
 	<div class="trifacho">
 		<div class="first">
 			<h1><span class="color3">tri</span><span class="color2">fa</span><span class="color3">cho</span></h1>
-			<p class="text-center">Encuentra tu policia facha y compara las<br/>hostias de los diferentes colegios</p>
+			<p class="text-center">Troba el teu policia fatxa i compara les<br/>hòsties dels diferents col·legis</p>
 		</div>
 
 		<div class="second">
@@ -28,21 +37,21 @@
 		</div>
 
 		<div class="input-group search1">
-			<input type="text" class="form-control input-lg search2" placeholder="Ej. patada voladora">
+			<input type="text" class="form-control input-lg search2" placeholder="Ex. sant antoni">
 			<span class="input-group-btn">
-				<button class="btn btn-default btn-lg search3" type="button">Buscar</button>
+				<button class="btn btn-default btn-lg search3" type="button">Cercar</button>
 			</span>
 		</div>
 
-		<p class="text-center search4"></p>
+		<p class="text-center search4 void0">No se ha entrado ningún criterio de búsqueda</p>
+		<p class="text-center search4 type0">No se han encontrado resultados con estos criterios</p>
+		<p class="text-center search4 type1">Se estan mostrando los resultados que contienen todos los terminos entrados</p>
+		<p class="text-center search4 type2">Se estan mostrando los resultados que contienen alguno de los terminos entrados</p>
 	</div>
 
-	<div class="second">
-		<div class="tz-gallery">
-			<div class="row">
-
+	<div class="tz-gallery">
+		<div class="row">
 			</div>
-		</div>
 	</div>
 
 	<div class="template">
@@ -57,7 +66,6 @@
 			</div>
 		</div>
 	</div>
-
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

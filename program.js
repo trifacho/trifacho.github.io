@@ -1,13 +1,56 @@
 
 var cache=[];
 
-function keycode(e) {
+function get_keycode(e) {
 	if(e.keyCode) return e.keyCode;
 	else if(e.which) return e.which;
 	else return e.charCode;
 }
 
-$(document).ready(function() {
+function get_language() {
+	var lang=navigator.language || navigator.systemLanguage;
+	lang=lang.toLowerCase();
+	lang=lang.substr(0,2);
+	return lang;
+}
+
+function set_language(lang) {
+	if(lang=="ca") {
+		$(".languages .active").removeClass("active");
+		$(".languages .catala").addClass("active");
+		$(".first p").html("Troba el teu policia fatxa i compara les<br/>hòsties dels diferents col·legis");
+		$(".search2").attr("placeholder","Ex. sant antoni");
+		$(".search3").html("Cercar");
+		$(".search4.void0").html("No s'ha entrat cap criteri de cerca");
+		$(".search4.type0").html("No s'han trobat resultats amb aquests criteris");
+		$(".search4.type1").html("S'estan mostrant els resultats que contenen tots els termes entrats");
+		$(".search4.type2").html("S'estan mostrant els resultats que contenen algun dels termes entrats");
+	}
+	if(lang=="es") {
+		$(".languages .active").removeClass("active");
+		$(".languages .castellano").addClass("active");
+		$(".first p").html("Encuentra tu policia facha y compara las<br/>hostias de los diferentes colegios");
+		$(".search2").attr("placeholder","Ej. patada voladora");
+		$(".search3").html("Buscar");
+		$(".search4.void0").html("No se ha entrado ningún criterio de búsqueda");
+		$(".search4.type0").html("No se han encontrado resultados con estos criterios");
+		$(".search4.type1").html("Se estan mostrando los resultados que contienen todos los terminos entrados");
+		$(".search4.type2").html("Se estan mostrando los resultados que contienen alguno de los terminos entrados");
+	}
+	if(lang=="en") {
+		$(".languages .active").removeClass("active");
+		$(".languages .english").addClass("active");
+		$(".first p").html("Find your spanish police and compare the<br/>attacks of the different schools");
+		$(".search2").attr("placeholder","Ex. spanish police");
+		$(".search3").html("Search");
+		$(".search4.void0").html("No search criteria has been entered");
+		$(".search4.type0").html("No results were found with these criteria");
+		$(".search4.type1").html("Results are shown that contain all the entered terms");
+		$(".search4.type2").html("Results are shown that contain any of the terms entered");
+	}
+}
+
+function init_cache() {
 	var urls=[
 		"https://spanishpolice.github.io",
 		"https://spanishradicals.github.io",
@@ -39,19 +82,42 @@ $(document).ready(function() {
 			}
 		});
 	}
-	var fn=function() {
-		$(".first").hide();
-		$(".second").show();
-		$(".tz-gallery .row").html("");
-		var num=0;
-		var type=0
-		var text=$(".search2").val().trim().split(" ");
-		if(text.length==1 && text[0]=="") {
-			$(".second").hide();
-			$(".first").show();
-			$(".search4").html("No se ha entrado ningún criterio de búsqueda");
-			return;
+}
+
+function real_search() {
+	var num=0;
+	var type=0
+	var text=$(".search2").val().trim().split(" ");
+	if(text.length==1 && text[0]=="") {
+		$(".second").hide();
+		$(".first").show();
+		$(".search4").hide();
+		$(".search4.void0").show();
+		$(".tz-gallery").hide();
+		return;
+	}
+
+	$(".tz-gallery .row").html("");
+	for(var i in cache) {
+		found=0;
+		for(var j in text) {
+			if(cache[i].source.search(new RegExp(text[j],"i"))!=-1) found++;
+			else if(cache[i].url.search(new RegExp(text[j],"i"))!=-1) found++;
+			else if(cache[i].img.search(new RegExp(text[j],"i"))!=-1) found++;
+			else if(cache[i].text.search(new RegExp(text[j],"i"))!=-1) found++;
 		}
+		if(found==text.length && num<30) {
+			var template=$(".template").html();
+			template=$(template);
+			$("a",template).attr("href",cache[i].url);
+			$("img",template).attr("src",cache[i].source+"/"+cache[i].img);
+			$(".caption p",template).html(cache[i].text);
+			$(".tz-gallery .row").append(template);
+			num++;
+			type=1;
+		}
+	}
+	if(num==0) {
 		for(var i in cache) {
 			found=0;
 			for(var j in text) {
@@ -60,7 +126,7 @@ $(document).ready(function() {
 				else if(cache[i].img.search(new RegExp(text[j],"i"))!=-1) found++;
 				else if(cache[i].text.search(new RegExp(text[j],"i"))!=-1) found++;
 			}
-			if(found==text.length && num<30) {
+			if(found>0 && num<30) {
 				var template=$(".template").html();
 				template=$(template);
 				$("a",template).attr("href",cache[i].url);
@@ -68,45 +134,38 @@ $(document).ready(function() {
 				$(".caption p",template).html(cache[i].text);
 				$(".tz-gallery .row").append(template);
 				num++;
-				type=1;
+				type=2;
 			}
 		}
-		if(num==0) {
-			for(var i in cache) {
-				found=0;
-				for(var j in text) {
-					if(cache[i].source.search(new RegExp(text[j],"i"))!=-1) found++;
-					else if(cache[i].url.search(new RegExp(text[j],"i"))!=-1) found++;
-					else if(cache[i].img.search(new RegExp(text[j],"i"))!=-1) found++;
-					else if(cache[i].text.search(new RegExp(text[j],"i"))!=-1) found++;
-				}
-				if(found>0 && num<30) {
-					var template=$(".template").html();
-					template=$(template);
-					$("a",template).attr("href",cache[i].url);
-					$("img",template).attr("src",cache[i].source+"/"+cache[i].img);
-					$(".caption p",template).html(cache[i].text);
-					$(".tz-gallery .row").append(template);
-					num++;
-					type=2;
-				}
-			}
-		}
-		if(type==0) {
-			$(".second").hide();
-			$(".first").show();
-			$(".search4").html("No se han encontrado resultados con estos criterios");
-		}
-		if(type==1) {
-			$(".search4").html("Se han encontrado "+num+" resultados que contienen todos los terminos entrados");
-		}
-		if(type==2) {
-			$(".search4").html("Se han encontrado "+num+" resultados que contienen alguno de los terminos entrados");
-		}
-	};
-	$(".search3").on("click",fn);
-	$(".search2").on("keypress",function(e) {
-		if(keycode(e)==13) fn();
-	});
+	}
+
+	if(type==0) {
+		$(".second").hide();
+		$(".first").show();
+		$(".search4").hide();
+		$(".search4.type0").show();
+		$(".tz-gallery").hide();
+	}
+	if(type==1) {
+		$(".first").hide();
+		$(".second").show();
+		$(".search4").hide();
+		$(".search4.type1").show();
+		$(".tz-gallery").show();
+	}
+	if(type==2) {
+		$(".first").hide();
+		$(".second").show();
+		$(".search4").hide();
+		$(".search4.type2").show();
+		$(".tz-gallery").show();
+	}
+}
+
+$(document).ready(function() {
+	set_language(get_language());
+	init_cache();
+	$(".search3").on("click",real_search);
+	$(".search2").on("keypress",function(e) { if(get_keycode(e)==13) real_search(); });
 	$(".search2").focus();
 });
