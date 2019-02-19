@@ -101,6 +101,11 @@ body {
     margin-bottom:20px;
 }
 
+.trifacho h1 a,
+.trifacho h2 a {
+	text-decoration:none;
+}
+
 .trifacho p {
     text-align: center;
     margin: 20px auto 40px;

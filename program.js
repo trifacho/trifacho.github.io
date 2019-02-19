@@ -985,4 +985,10 @@ $(document).ready(function() {
 		set_param("lang",$(this).attr("lang"));
 		set_language($(this).attr("lang"));
 	});
+	$("h1 a,h2 a").on("click",function() {
+		$(".search2").val($(this).attr("q"));
+		set_param("q",$(this).attr("q"));
+		real_search($(this).attr("q"));
+	});
+
 });
