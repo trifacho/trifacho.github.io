@@ -842,6 +842,16 @@ var cache=[{
 	url:"https://www.youtube.com/watch?v=228Xg1lf_Hc",
 	img:"images/img-228Xg1lf_Hc.jpg",
 	txt:"TV3 - Polònia - Trifacho - A conseqüència de la proliferació de partits amb una mateixa ideologia, neix 'Trifacho', l'eina que compara les diferents promeses electorals per ajudar-te a trobar la teva extrema dreta ideal.",
+},{
+	src:"https://trifacho.github.io",
+	url:"https://spanishgurtelcase.github.io",
+	img:"images/img-spanishgurt.jpg",
+	txt:"El Cas Gürtel - El Major Cas de Corrupció del PP, les Estranyes Morts Associades i tot tapat amb la Independència de Catalunya",
+},{
+	src:"https://trifacho.github.io",
+	url:"https://spanishmanada.github.io",
+	img:"images/img-spanishmana.jpg",
+	txt:"Spanish Manada - The Authorized Rapists by the Spanish Government - Los Violadores Autorizados por el Gobierno Español",
 }];
 
 function init_cache() {
@@ -990,5 +1000,4 @@ $(document).ready(function() {
 		set_param("q",$(this).attr("q"));
 		real_search($(this).attr("q"));
 	});
-
 });

@@ -15,15 +15,8 @@ Related projects
 - https://spanishmanada.github.io
 
 Features of the ajax search engine:
-- Allows to do searches of the follow sites:
-  - https://spanishpolice.github.io
-  - https://spanishradicals.github.io
-  - https://catalanpolice.github.io
-  - https://spanishbadking.github.io
-  - https://spanishcleaners.github.io
-  - https://spanishfakenews.github.io
-  - https://spanishindoctrination.github.io
-- Allows to call the website passing arguments:
+- Allow to do searches using all the previous sites contents:
+- Allow to call the website passing arguments:
   - lang=ca,en,es
   - q=search+string
 - Examples of the previous features:
