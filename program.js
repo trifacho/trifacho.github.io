@@ -852,6 +852,11 @@ var cache=[{
 	url:"https://spanishmanada.github.io",
 	img:"images/img-spanishmana.jpg",
 	txt:"Spanish Manada - The Authorized Rapists by the Spanish Government - Los Violadores Autorizados por el Gobierno Español",
+},{
+	src:"https://trifacho.github.io",
+	url:"https://www.youtube.com/watch?v=aQJ3FTPZrW8",
+	img:"images/img-aQJ3FTPZrW8.jpg",
+	txt:"Polònia - Les preses falses del Rei - Hem accedit al brut de la gravació del dinar entre Felip i Letícia i les seves filles",
 }];
 
 function init_cache() {
