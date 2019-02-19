@@ -160,7 +160,7 @@ body {
 	display:none;
 }
 
-.tz-gallery {
+.tz-gallery .row {
 	min-height:150px;
 }
 
