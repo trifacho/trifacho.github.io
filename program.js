@@ -892,7 +892,7 @@ function init_cache() {
 		});
 	}
 	for(var i in cache) {
-		cache[i].all=accent_fold([cache[i].src,cache[i].url,cache[i].img,cache[i].txt].join(" "));
+		cache[i].all=accent_fold([cache[i].src,cache[i].txt].join(" "));
 	}
 }
 
