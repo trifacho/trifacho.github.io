@@ -94,11 +94,20 @@ body {
     letter-spacing:-4px;
 }
 
+.trifacho h1 .cho {
+	letter-spacing:-6px;
+}
+
 .trifacho h2 {
 	text-align:center;
     font-family: sans-serif;
     font-weight: bold;
     margin-bottom:20px;
+    letter-spacing:-1px;
+}
+
+.trifacho h2 .cho {
+	letter-spacing:-3px;
 }
 
 .trifacho h1 a,
@@ -152,7 +161,7 @@ body {
 }
 
 .tz-gallery {
-	display:none;
+	min-height:150px;
 }
 
 .template {

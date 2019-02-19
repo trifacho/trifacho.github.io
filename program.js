@@ -899,16 +899,15 @@ function init_cache() {
 function real_search(text) {
 	var num=0;
 	var type=0
+	$(".tz-gallery .row").html("");
 	text=text.trim().split(" ");
 	if(text.length==1 && text[0]=="") {
 		$(".second").hide();
 		$(".first").show();
 		$(".search4").hide();
 		$(".search4.void0").show();
-		$(".tz-gallery").hide();
 		return;
 	}
-	$(".tz-gallery .row").html("");
 	for(var i in cache) {
 		found=0;
 		for(var j in text) {
@@ -948,21 +947,18 @@ function real_search(text) {
 		$(".first").show();
 		$(".search4").hide();
 		$(".search4.type0").show();
-		$(".tz-gallery").hide();
 	}
 	if(type==1) {
 		$(".first").hide();
 		$(".second").show();
 		$(".search4").hide();
 		$(".search4.type1").show();
-		$(".tz-gallery").show();
 	}
 	if(type==2) {
 		$(".first").hide();
 		$(".second").show();
 		$(".search4").hide();
 		$(".search4.type2").show();
-		$(".tz-gallery").show();
 	}
 }
 
