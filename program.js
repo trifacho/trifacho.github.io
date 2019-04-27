@@ -839,9 +839,19 @@ function set_language(lang) {
 
 var cache=[{
 	src:"https://trifacho.github.io",
+	url:"https://www.youtube.com/watch?v=A2QjSsHndJM",
+	img:"images/img-A2QjSsHndJM.jpg",
+	txt:"TV3 - Polònia - Arriba el Trifachito - Aquesta setmana, a Polònia, el trio de dretes, Casado (David Marcé), Rivera (Ivan Labanda) i Abascal (Noe Blancafort) presentaran 'Arriba el fachito', una paròdia de la mítica cançó 'La Trinca'",
+},{
+	src:"https://trifacho.github.io",
 	url:"https://www.youtube.com/watch?v=228Xg1lf_Hc",
 	img:"images/img-228Xg1lf_Hc.jpg",
 	txt:"TV3 - Polònia - Trifacho - A conseqüència de la proliferació de partits amb una mateixa ideologia, neix 'Trifacho', l'eina que compara les diferents promeses electorals per ajudar-te a trobar la teva extrema dreta ideal.",
+},{
+	src:"https://trifacho.github.io",
+	url:"https://www.youtube.com/watch?v=aQJ3FTPZrW8",
+	img:"images/img-aQJ3FTPZrW8.jpg",
+	txt:"TV3 - Polònia - Les preses falses del Rei - Hem accedit al brut de la gravació del dinar entre Felip i Letícia i les seves filles",
 },{
 	src:"https://trifacho.github.io",
 	url:"https://spanishgurtelcase.github.io",
@@ -852,11 +862,6 @@ var cache=[{
 	url:"https://spanishmanada.github.io",
 	img:"images/img-spanishmana.jpg",
 	txt:"Spanish Manada - The Authorized Rapists by the Spanish Government - Los Violadores Autorizados por el Gobierno Español",
-},{
-	src:"https://trifacho.github.io",
-	url:"https://www.youtube.com/watch?v=aQJ3FTPZrW8",
-	img:"images/img-aQJ3FTPZrW8.jpg",
-	txt:"TV3 - Polònia - Les preses falses del Rei - Hem accedit al brut de la gravació del dinar entre Felip i Letícia i les seves filles",
 }];
 
 function init_cache() {
