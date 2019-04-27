@@ -188,3 +188,8 @@ body {
 .languages .active {
 	background:#000;
 }
+
+/* ADDED */
+.caption b {
+	background-color:#ff0;
+}
