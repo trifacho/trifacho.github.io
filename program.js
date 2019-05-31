@@ -177,14 +177,19 @@ function set_language(lang) {
 
 var cache=[{
 	src:"https://trifacho.github.io",
+	url:"https://www.youtube.com/watch?v=g6-TRL2k10w",
+	img:"images/img-g6-TRL2k10w.jpg",
+	txt:"Polònia TV3 - Ultranational Geographic ens mostra l'arribada de la dreta a l'Ajuntament de Madrid. Sembla que Pablo Casado, Albert Rivera, Santiago Abascal i Ortega Smith hi han fet niu.",
+},{
+	src:"https://trifacho.github.io",
 	url:"https://www.youtube.com/watch?v=_x6ku01qpzE",
 	img:"images/img-_x6ku01qpzE.jpg",
-	txt:"Polònia TV3 - Descobrirem els nous comportaments de la dreta en aquesta nova legislatura. Com s'adaptarà el rei de la crispació, Albert Rivera (Ivan Labanda), a la irrupció d'Abascal (Noé Blancafort) i Ortega Smith (Albert Mèlich)?",
+	txt:"Polònia TV3 - Descobrirem els nous comportaments de la dreta en aquesta nova legislatura. Com s'adaptarà el rei de la crispació, Albert Rivera, a la irrupció d'Abascal i Ortega Smith?",
 },{
 	src:"https://trifacho.github.io",
 	url:"https://www.youtube.com/watch?v=A2QjSsHndJM",
 	img:"images/img-A2QjSsHndJM.jpg",
-	txt:"TV3 - Polònia - Arriba el Trifachito - Aquesta setmana, a Polònia, el trio de dretes, Casado (David Marcé), Rivera (Ivan Labanda) i Abascal (Noe Blancafort) presentaran 'Arriba el fachito', una paròdia de la mítica cançó 'La Trinca'",
+	txt:"TV3 - Polònia - Arriba el Trifachito - Aquesta setmana, a Polònia, el trio de dretes, Casado, Rivera i Abascal presentaran 'Arriba el fachito', una paròdia de la mítica cançó 'La Trinca'",
 },{
 	src:"https://trifacho.github.io",
 	url:"https://www.youtube.com/watch?v=228Xg1lf_Hc",
