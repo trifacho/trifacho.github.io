@@ -177,6 +177,16 @@ function set_language(lang) {
 
 var cache=[{
 	src:"https://trifacho.github.io",
+	url:"https://www.youtube.com/watch?v=cc5V2GBQc_g",
+	img:"images/img-cc5V2GBQc_g.jpg",
+	txt:"El Rey Juan Carlos I jura lealtad a Franco - Todo atado y bien atado, en la coronación del el Rey Juan Carlos jura lealtad al dictador Franco y fidelidad a los principios del movimiento franquista",
+},{
+	src:"https://trifacho.github.io",
+	url:"https://www.youtube.com/watch?v=7ekU8PGEofU",
+	img:"images/img-7ekU8PGEofU.jpg",
+	txt:"Polònia TV3 - L'època de pactes de la sabana política continua amb la tercera entrega Ultranational Geographic, dedicat al camuflatge d'Albert Rivera i als rituals d'aparellament.",
+},{
+	src:"https://trifacho.github.io",
 	url:"https://www.youtube.com/watch?v=g6-TRL2k10w",
 	img:"images/img-g6-TRL2k10w.jpg",
 	txt:"Polònia TV3 - Ultranational Geographic ens mostra l'arribada de la dreta a l'Ajuntament de Madrid. Sembla que Pablo Casado, Albert Rivera, Santiago Abascal i Ortega Smith hi han fet niu.",
