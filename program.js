@@ -177,6 +177,21 @@ function set_language(lang) {
 
 var cache=[{
 	src:"https://trifacho.github.io",
+	url:"https://www.youtube.com/watch?v=a6aTvK7uc9Y",
+	img:"images/img-a6aTvK7uc9Y.jpg",
+	txt:"Cara al sol en el funeral del exministro José Utrera Molina - El Fascista José Utrera Molina era un abogado y político español y ocupó importantes cargos con el general Franco.",
+},{
+	src:"https://trifacho.github.io",
+	url:"https://www.youtube.com/watch?v=yFNhvK2ujGY",
+	img:"images/img-yFNhvK2ujGY.jpg",
+	txt:"Antonio Tejero Molina, ¡quieto todo el mundo! - Haciendo apología de la democracia con ejércitos y cuerpos de seguridad. Lo que le deben haber pagado para no soltar prenda del 23F....",
+},{
+	src:"https://trifacho.github.io",
+	url:"https://www.youtube.com/watch?v=wzNFO_VdJIg",
+	img:"images/img-wzNFO_VdJIg.jpg",
+	txt:"Discurso del Rey Felipe VI, 3 Octubre, sobre los acontecimientos en Cataluña. El monarca apela a la unidad de España y advierte de la deslealtad de las autoridades de la Generalitat.",
+},{
+	src:"https://trifacho.github.io",
 	url:"https://www.youtube.com/watch?v=cc5V2GBQc_g",
 	img:"images/img-cc5V2GBQc_g.jpg",
 	txt:"El Rey Juan Carlos I jura lealtad a Franco - Todo atado y bien atado, en la coronación del el Rey Juan Carlos jura lealtad al dictador Franco y fidelidad a los principios del movimiento franquista",
