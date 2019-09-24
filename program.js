@@ -177,6 +177,11 @@ function set_language(lang) {
 
 var cache=[{
 	src:"https://trifacho.github.io",
+	url:"https://twitter.com/Yo_Soy_Asin/status/1176464040899633152",
+	img:"images/img-1176464040899633152.jpg",
+	txt:"Guardia Civil, Policia Nacional, Audiencia Nacional, Fiscalia, Gobierno de España y Carmen Lamela Acusan de Terrorismo y de Fabricar Artefactos Explosivos con Col Lombarda y Zumo Naranja",
+},{
+	src:"https://trifacho.github.io",
 	url:"https://www.youtube.com/watch?v=a6aTvK7uc9Y",
 	img:"images/img-a6aTvK7uc9Y.jpg",
 	txt:"Cara al sol en el funeral del exministro José Utrera Molina - El Fascista José Utrera Molina era un abogado y político español y ocupó importantes cargos con el general Franco.",
