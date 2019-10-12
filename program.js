@@ -177,6 +177,11 @@ function set_language(lang) {
 
 var cache=[{
 	src:"https://trifacho.github.io",
+	url:"https://twitter.com/el_pais/status/1182953844013064192",
+	img:"images/img-1182953844013064192.jpg",
+	txt:"Esta es la secuencia completa del paracaidista que ha chocado contra una farola ante los Reyes cuando iba a entregar la bandera española del desfile de la Fiesta Nacional España 12 Octubre",
+},{
+	src:"https://trifacho.github.io",
 	url:"https://twitter.com/superwomanroja/status/1182910273302208512",
 	img:"images/img-1182910273302208512.jpg",
 	txt:"No hay mejor día que hoy para recordar al gran Pepe Rubianes 12 Octubre Fiesta Nacional Puta España",
