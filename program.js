@@ -179,7 +179,47 @@ var cache=[{
 	src:"https://trifacho.github.io",
 	url:"https://twitter.com/el_pais/status/1182953844013064192",
 	img:"images/img-1182953844013064192.jpg",
-	txt:"Esta es la secuencia completa del paracaidista que ha chocado contra una farola ante los Reyes cuando iba a entregar la bandera española del desfile de la Fiesta Nacional España 12 Octubre",
+	txt:"Esta es la secuencia completa del paracaidista que ha chocado contra una farola ante los Reyes cuando iba a entregar la bandera española del desfile de la Fiesta Nacional",
+},{
+	src:"https://trifacho.github.io",
+	url:"https://twitter.com/baphomed75/status/1183069506547146752",
+	img:"images/img-1183069506547146752.jpg",
+	txt:"Avui res a celebrar però si uns riures amb la farola... #ThisIsTheRealSpain #12OctubreNadaQueCelebrar",
+},{
+	src:"https://trifacho.github.io",
+	url:"https://twitter.com/Juanmi_News/status/1183104352732491778",
+	img:"images/img-1183104352732491778.jpg",
+	txt:"TV de Europa 'Euronews' saca el farolazo español en su sección 'No Comment'.",
+},{
+	src:"https://trifacho.github.io",
+	url:"https://twitter.com/IndepeRepublic1/status/1183108191015571462",
+	img:"images/img-1183108191015571462.jpg",
+	txt:"Recibido por WhatsApp #Farola",
+},{
+	src:"https://trifacho.github.io",
+	url:"https://twitter.com/Trazzto/status/1182985791846391808",
+	img:"images/img-1182985791846391808.jpg",
+	txt:"¡Madre mía el nuevo remake del Rey León de Disney! #Farola #PelisConFarola.",
+},{
+	src:"https://trifacho.github.io",
+	url:"https://twitter.com/henzovic/status/1182974182285553666",
+	img:"images/img-1182974182285553666.jpg",
+	txt:"José Mota ya predijo lo de la farola! @JoseMotatv",
+},{
+	src:"https://trifacho.github.io",
+	url:"https://twitter.com/davidmoreno/status/1182958810358599680",
+	img:"images/img-1182958810358599680.jpg",
+	txt:"Gracias Bisbal por ponerle banda sonora al momento del paracaidista, la bandera y la farola. #12Octubre",
+},{
+	src:"https://trifacho.github.io",
+	url:"https://twitter.com/ActualidadRT/status/1182954861811384321",
+	img:"images/img-1182954861811384321.jpg",
+	txt:"Paracaidista que portaba la bandera de España choca contra una farola durante el desfile de las Fuerzas Armadas en Madrid",
+},{
+	src:"https://trifacho.github.io",
+	url:"https://twitter.com/wokiTV/status/1182984745212354562",
+	img:"images/img-1182984745212354562.jpg",
+	txt:"Ya lo avisó Mota #farola #Hispanidad #DiadelaFiestaNacional",
 },{
 	src:"https://trifacho.github.io",
 	url:"https://twitter.com/superwomanroja/status/1182910273302208512",
