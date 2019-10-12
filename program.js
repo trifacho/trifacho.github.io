@@ -177,6 +177,11 @@ function set_language(lang) {
 
 var cache=[{
 	src:"https://trifacho.github.io",
+	url:"https://twitter.com/superwomanroja/status/1182910273302208512",
+	img:"images/img-1182910273302208512.jpg",
+	txt:"No hay mejor día que hoy para recordar al gran Pepe Rubianes 12 Octubre Fiesta Nacional Puta España",
+},{
+	src:"https://trifacho.github.io",
 	url:"https://twitter.com/Yo_Soy_Asin/status/1176464040899633152",
 	img:"images/img-1176464040899633152.jpg",
 	txt:"Guardia Civil, Policia Nacional, Audiencia Nacional, Fiscalia, Gobierno de España y Carmen Lamela Acusan de Terrorismo y de Fabricar Artefactos Explosivos con Col Lombarda y Zumo Naranja",
