@@ -13,6 +13,7 @@ Related projects
 - https://spanishindoctrination.github.io
 - https://spanishgurtelcase.github.io
 - https://spanishmanada.github.io
+- https://spanishlamppost.github.io
 
 Features of the ajax search engine:
 - Allow to do searches using all the previous sites contents:
@@ -23,4 +24,5 @@ Features of the ajax search engine:
   - https://trifacho.github.io/?q=sant+antoni
   - https://trifacho.github.io/?lang=en
   - https://trifacho.github.io/?q=sant+antoni&lang=en
+  - https://trifacho.github.io/?q=farola
 
