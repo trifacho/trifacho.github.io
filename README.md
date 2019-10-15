@@ -14,6 +14,7 @@ Related projects
 - https://spanishgurtelcase.github.io
 - https://spanishmanada.github.io
 - https://spanishlamppost.github.io
+- https://trifacho.github.io
 
 Features of the ajax search engine:
 - Allow to do searches using all the previous sites contents:
