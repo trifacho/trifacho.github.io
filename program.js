@@ -257,6 +257,7 @@ function init_cache() {
 		"https://spanishfakenews.github.io",
 		"https://spanishindoctrination.github.io",
 		"https://spanishlamppost.github.io",
+		"https://catalanrepression.github.io",
 	];
 	for(var i in urls) {
 		$.ajax({
